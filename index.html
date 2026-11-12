@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="sk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#123b35">
+<title>Ranný prehľad – Lietavská Lúčka</title>
+<style>
+:root{--bg:#f3f6f5;--card:#fff;--ink:#172522;--muted:#667571;--line:#e1e9e6;--green:#147d54;--yellow:#a86608;--red:#b42318;--blue:#1769aa;--shadow:0 8px 28px rgba(24,54,46,.07)}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+header{background:linear-gradient(135deg,#123b35,#1c6655);color:#fff;padding:34px 18px 42px}
+.wrap{max-width:980px;margin:auto;padding:0 18px}
+.kicker{font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;opacity:.8;font-weight:700}
+h1{font-size:clamp(2rem,5vw,3.1rem);line-height:1.08;margin:8px 0}
+.sub{opacity:.85}.updated{display:inline-flex;margin-top:18px;padding:6px 11px;border:1px solid #ffffff55;border-radius:999px;font-size:.84rem}
+main{padding:24px 0 50px}.section-title{font-size:1.25rem;margin:28px 0 12px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:17px;padding:17px;box-shadow:var(--shadow)}
+.card h2,.card h3{margin:0 0 8px;font-size:1rem}.metric{font-size:1.8rem;font-weight:750;line-height:1.2;letter-spacing:-.04em}.muted{color:var(--muted);font-size:.88rem}
+.pill{display:inline-flex;align-items:center;gap:6px;border-radius:999px;padding:4px 9px;font-size:.78rem;font-weight:700;background:#edf2f0;color:#44534e}
+.good{background:#e7f5ed;color:var(--green)}.warn{background:#fff3dc;color:var(--yellow)}.bad{background:#fde9e7;color:var(--red)}.info{background:#e8f2fb;color:var(--blue)}
+.vent{border-left:5px solid var(--yellow)}.vent.good-border{border-color:var(--green)}.vent.bad-border{border-color:var(--red)}
+.report{white-space:pre-wrap;overflow-wrap:anywhere;font-size:.97rem}.notice{padding:14px 16px;border-radius:12px;background:#fff8e8;border:1px solid #f0dfb9;color:#684a18}
+footer{padding:22px 0;color:var(--muted);font-size:.82rem;border-top:1px solid var(--line)}
+@media(max-width:620px){.grid{grid-template-columns:1fr}.wide{grid-column:auto}.card{padding:15px}header{padding-top:27px}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="kicker">Verejný informačný panel</div>
+  <h1>Ranný prehľad</h1>
+  <div class="sub">Lietavská Lúčka a okolie</div>
+  <div class="updated" id="updated">Načítavam aktuálne údaje…</div>
+</div></header>
+<main class="wrap">
+  <h2 class="section-title">Aktuálne podmienky</h2>
+  <div class="grid" id="cards"><div class="card">Načítavam údaje zo senzorov…</div></div>
+
+  <h2 class="section-title">Kompletný ranný prehľad</h2>
+  <section class="card">
+    <div id="report" class="report">Textový ranný prehľad sa zatiaľ neprenáša na web. Táto časť sa automaticky naplní po doplnení prepojenia medzi rannou úlohou ChatGPT a GitHubom.</div>
+  </section>
+  <p class="muted" style="margin-top:14px">Údaje zo senzorov sú orientačné. Lokálne senzory nie sú náhradou oficiálneho merania SHMÚ. Pri neaktuálnych alebo chýbajúcich dátach sa hodnotenie nezobrazuje.</p>
+</main>
+<footer><div class="wrap">Ranný prehľad pre Lietavskú Lúčku · Automaticky aktualizované z dostupných dát</div></footer>
+<script>
+const DATA_URL='https://raw.githubusercontent.com/jankoprtiska-byte/ranna-uloha-data/main/ranny-prehlad.json';
+const REPORT_URL='https://raw.githubusercontent.com/jankoprtiska-byte/ranna-uloha-data/main/ranny-prehlad-text.json';
+const $=id=>document.getElementById(id);
+const fmt=(v,d=1)=>Number.isFinite(Number(v))?Number(v).toLocaleString('sk-SK',{maximumFractionDigits:d}):'—';
+function pmState(v){if(v<=15)return ['Dobrá','good','Môžeš bez obáv vyvetrať.'];if(v<=25)return ['Zhoršená','warn','Ak potrebuješ, vyvetraj krátko; ak môžeš, počkaj na lepšie hodnoty.'];return ['Veľmi zlá','bad','Teraz radšej nevetráj, ak to nie je nevyhnutné; počkaj na pokles hodnôt.'];}
+function esc(x){return String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function sensorCard(s){
+ const l=s?.latest,v=l?.values?.['PM2.5'],fresh=l?.fresh===true&&Number.isFinite(Number(v)),state=fresh?pmState(Number(v)):null;
+ const night=s?.overnight?.stats?.['PM2.5'];
+ return '<article class="card"><h3>'+esc(s?.source_name||'Senzor')+'</h3><div class="metric">'+(fresh?fmt(v,1)+' <span style="font-size:1rem;font-weight:600">µg/m³</span>':'—')+'</div><div style="margin:8px 0">'+(state?'<span class="pill '+state[1]+'">'+state[0]+'</span>':'<span class="pill">Údaj nie je aktuálny</span>')+'</div><div class="muted">Meranie: '+esc(l?.measurement_time_local||'bez údaja')+' · vek '+(l?.age_minutes??'—')+' min</div>'+(night?'<div class="muted" style="margin-top:9px">Nočný priemer PM2.5: <b>'+fmt(night.average,1)+' µg/m³</b></div>':'')+'</article>';
+}
+function weatherCard(w){
+ const l=w?.latest,v=l?.values||{};
+ if(!l)return '<article class="card"><h3>Meteostanica</h3><div class="muted">Údaje nie sú dostupné.</div></article>';
+ return '<article class="card"><h3>Meteostanica</h3><div class="metric">'+fmt(v['Teplota (°C)'],1)+' °C</div><div class="muted">Vlhkosť '+fmt(v['Vlhkosť (%)'],0)+' %</div><div style="margin-top:8px">Vietor '+fmt(v['Rýchlosť vetra (km/h)'],1)+' km/h · nárazy '+fmt(v['Náraz vetra (km/h)'],1)+' km/h</div><div class="muted">Meranie: '+esc(l.measurement_time_local||'bez údaja')+' · vek '+(l.age_minutes??'—')+' min</div></article>';
+}
+function ventilation(home){
+ const l=home?.latest,v=l?.values?.['PM2.5'];
+ if(!l||l.fresh!==true||!Number.isFinite(Number(v)))return '<article class="card vent"><h3>Ranné vetranie</h3><div class="pill">Nedá sa spoľahlivo vyhodnotiť</div><p class="muted">Domáci senzor neposkytuje aktuálny údaj PM2.5.</p></article>';
+ const st=pmState(Number(v)),border=st[1]==='good'?'good-border':st[1]==='bad'?'bad-border':'';
+ return '<article class="card vent '+border+'"><h3>Ranné vetranie</h3><div class="metric">'+st[0]+'</div><p>'+st[2]+'</p><div class="muted">Podľa aktuálneho PM2.5 domáceho senzora ('+fmt(v,1)+' µg/m³). Praktické orientačné hodnotenie, nie oficiálna klasifikácia.</div></article>';
+}
+async function load(){
+ try{
+  const r=await fetch(DATA_URL+'?t='+Date.now(),{cache:'no-store'});if(!r.ok)throw new Error('HTTP '+r.status);
+  const d=await r.json();$('updated').textContent='Dáta aktualizované: '+(d.generated_at_local||'čas nie je uvedený');
+  const s=d.sources||{};$('cards').innerHTML=sensorCard(s.air_quality)+sensorCard(s.air_quality1)+weatherCard(s.weather_station)+ventilation(s.air_quality);
+  if(d.warnings?.length)$('cards').insertAdjacentHTML('beforeend','<article class="card wide"><b>Upozornenia k dátam</b><ul>'+d.warnings.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul></article>');
+ }catch(e){$('updated').textContent='Údaje sa nepodarilo načítať';$('cards').innerHTML='<div class="notice wide">Momentálne sa nepodarilo načítať aktuálne údaje zo zdroja. Skús obnoviť stránku neskôr.</div>';}
+}
+async function loadReport(){
+ try{const r=await fetch(REPORT_URL+'?t='+Date.now(),{cache:'no-store'});if(!r.ok)return;const d=await r.json();if(d.text)$('report').textContent=d.text;}catch(e){}
+}
+load();loadReport();setInterval(load,5*60*1000);setInterval(loadReport,5*60*1000);
+</script>
+</body>
+</html>
