@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "generated_at_utc": "2026-11-13T19:36:35.465Z",
-  "generated_at_local": "13.11.2026 20:36:35",
+  "generated_at_utc": "2026-11-13T19:41:35.338Z",
+  "generated_at_local": "13.11.2026 20:41:35",
   "timezone": "Europe/Bratislava",
   "freshness_limit_minutes": 30,
   "overnight_period": {
@@ -15,7 +15,7 @@
       "source_id": "air_quality",
       "source_name": "Senzor doma",
       "ok": true,
-      "row_count": 24726,
+      "row_count": 24727,
       "columns": [
         "Čas stiahnutia",
         "Čas merania",
@@ -26,16 +26,16 @@
         "Tlak"
       ],
       "latest": {
-        "measurement_time_utc": "2026-11-13T19:36:29.000Z",
-        "measurement_time_local": "13.11.2026 20:36:29",
-        "age_minutes": 0,
+        "measurement_time_utc": "2026-11-13T19:39:18.000Z",
+        "measurement_time_local": "13.11.2026 20:39:18",
+        "age_minutes": 2,
         "fresh": true,
         "values": {
-          "PM2.5": "",
-          "PM10": "",
-          "Teplota": 0.74,
-          "Vlhkosť": 87.46,
-          "Tlak": 97130.84
+          "PM2.5": 11,
+          "PM10": 20.38,
+          "Teplota": 0.82,
+          "Vlhkosť": 86.9,
+          "Tlak": 97133
         }
       },
       "overnight": {
@@ -128,7 +128,7 @@
       "latest": {
         "measurement_time_utc": "2026-11-13T19:35:34.000Z",
         "measurement_time_local": "13.11.2026 20:35:34",
-        "age_minutes": 1,
+        "age_minutes": 6,
         "fresh": true,
         "values": {
           "PM2.5": 31.7,
@@ -189,7 +189,7 @@
       "source_id": "weather_station",
       "source_name": "Meteostanica",
       "ok": true,
-      "row_count": 1676,
+      "row_count": 1680,
       "columns": [
         "Čas stiahnutia",
         "Čas merania",
@@ -205,16 +205,16 @@
         "Epoch"
       ],
       "latest": {
-        "measurement_time_utc": "2026-11-13T19:14:16.000Z",
-        "measurement_time_local": "13.11.2026 20:14:16",
-        "age_minutes": 22,
+        "measurement_time_utc": "2026-11-13T19:34:51.000Z",
+        "measurement_time_local": "13.11.2026 20:34:51",
+        "age_minutes": 7,
         "fresh": true,
         "values": {
-          "Teplota (°C)": 0.4,
+          "Teplota (°C)": 0.9,
           "Vlhkosť (%)": 92,
-          "Rýchlosť vetra (km/h)": 3.7,
-          "Smer vetra (°)": 184,
-          "Náraz vetra (km/h)": 4.1,
+          "Rýchlosť vetra (km/h)": 4.5,
+          "Smer vetra (°)": 190,
+          "Náraz vetra (km/h)": 5.1,
           "Tlak (hPa)": 1010.84,
           "Intenzita zrážok (mm/h)": 0,
           "Zrážky spolu (mm)": 0,
