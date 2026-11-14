@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "generated_at_utc": "2026-11-14T09:21:35.002Z",
-  "generated_at_local": "14.11.2026 10:21:35",
+  "generated_at_utc": "2026-11-14T09:26:34.935Z",
+  "generated_at_local": "14.11.2026 10:26:34",
   "timezone": "Europe/Bratislava",
   "freshness_limit_minutes": 30,
   "overnight_period": {
@@ -15,7 +15,7 @@
       "source_id": "air_quality",
       "source_name": "Senzor doma",
       "ok": true,
-      "row_count": 25012,
+      "row_count": 25014,
       "columns": [
         "Čas stiahnutia",
         "Čas merania",
@@ -26,16 +26,16 @@
         "Tlak"
       ],
       "latest": {
-        "measurement_time_utc": "2026-11-14T09:20:45.000Z",
-        "measurement_time_local": "14.11.2026 10:20:45",
-        "age_minutes": 1,
+        "measurement_time_utc": "2026-11-14T09:26:31.000Z",
+        "measurement_time_local": "14.11.2026 10:26:31",
+        "age_minutes": 0,
         "fresh": true,
         "values": {
-          "PM2.5": "",
-          "PM10": "",
-          "Teplota": 5.12,
-          "Vlhkosť": 72.46,
-          "Tlak": 98056.56
+          "PM2.5": 4.88,
+          "PM10": 7.55,
+          "Teplota": 5.42,
+          "Vlhkosť": 68.74,
+          "Tlak": 98056.69
         }
       },
       "overnight": {
@@ -117,7 +117,7 @@
       "source_id": "air_quality1",
       "source_name": "Senzor na hlavnej ceste",
       "ok": true,
-      "row_count": 12750,
+      "row_count": 12751,
       "columns": [
         "Čas stiahnutia",
         "Čas merania",
@@ -126,14 +126,14 @@
         "Vlhkosť"
       ],
       "latest": {
-        "measurement_time_utc": "2026-11-14T09:19:58.000Z",
-        "measurement_time_local": "14.11.2026 10:19:58",
+        "measurement_time_utc": "2026-11-14T09:24:58.000Z",
+        "measurement_time_local": "14.11.2026 10:24:58",
         "age_minutes": 2,
         "fresh": true,
         "values": {
-          "PM2.5": 33.8,
-          "PM10": 38.3,
-          "Vlhkosť": 41
+          "PM2.5": 34.3,
+          "PM10": 37.7,
+          "Vlhkosť": 40
         }
       },
       "overnight": {
@@ -207,7 +207,7 @@
       "latest": {
         "measurement_time_utc": "2026-11-14T09:14:34.000Z",
         "measurement_time_local": "14.11.2026 10:14:34",
-        "age_minutes": 7,
+        "age_minutes": 12,
         "fresh": true,
         "values": {
           "Teplota (°C)": 2.8,
