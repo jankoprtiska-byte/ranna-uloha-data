@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "generated_at_utc": "2026-11-16T17:51:35.430Z",
-  "generated_at_local": "16.11.2026 18:51:35",
+  "generated_at_utc": "2026-11-16T17:56:35.538Z",
+  "generated_at_local": "16.11.2026 18:56:35",
   "timezone": "Europe/Bratislava",
   "freshness_limit_minutes": 30,
   "overnight_period": {
@@ -15,7 +15,7 @@
       "source_id": "air_quality",
       "source_name": "Senzor doma",
       "ok": true,
-      "row_count": 26186,
+      "row_count": 26188,
       "columns": [
         "Čas stiahnutia",
         "Čas merania",
@@ -26,16 +26,16 @@
         "Tlak"
       ],
       "latest": {
-        "measurement_time_utc": "2026-11-16T17:50:42.000Z",
-        "measurement_time_local": "16.11.2026 18:50:42",
-        "age_minutes": 1,
+        "measurement_time_utc": "2026-11-16T17:56:28.000Z",
+        "measurement_time_local": "16.11.2026 18:56:28",
+        "age_minutes": 0,
         "fresh": true,
         "values": {
-          "PM2.5": 5.4,
-          "PM10": 6.43,
-          "Teplota": 6.62,
-          "Vlhkosť": 78.36,
-          "Tlak": 96661.41
+          "PM2.5": 5.88,
+          "PM10": 10.1,
+          "Teplota": 6.63,
+          "Vlhkosť": 77.2,
+          "Tlak": 96667.56
         }
       },
       "overnight": {
@@ -117,7 +117,7 @@
       "source_id": "air_quality1",
       "source_name": "Senzor na hlavnej ceste",
       "ok": true,
-      "row_count": 13427,
+      "row_count": 13428,
       "columns": [
         "Čas stiahnutia",
         "Čas merania",
@@ -126,13 +126,13 @@
         "Vlhkosť"
       ],
       "latest": {
-        "measurement_time_utc": "2026-11-16T17:50:08.000Z",
-        "measurement_time_local": "16.11.2026 18:50:08",
+        "measurement_time_utc": "2026-11-16T17:55:08.000Z",
+        "measurement_time_local": "16.11.2026 18:55:08",
         "age_minutes": 1,
         "fresh": true,
         "values": {
-          "PM2.5": 24.8,
-          "PM10": 25,
+          "PM2.5": 25.5,
+          "PM10": 27.3,
           "Vlhkosť": 55
         }
       },
@@ -189,7 +189,7 @@
       "source_id": "weather_station",
       "source_name": "Meteostanica",
       "ok": true,
-      "row_count": 2517,
+      "row_count": 2520,
       "columns": [
         "Čas stiahnutia",
         "Čas merania",
@@ -205,16 +205,16 @@
         "Epoch"
       ],
       "latest": {
-        "measurement_time_utc": "2026-11-16T17:29:38.000Z",
-        "measurement_time_local": "16.11.2026 18:29:38",
-        "age_minutes": 22,
+        "measurement_time_utc": "2026-11-16T17:44:48.000Z",
+        "measurement_time_local": "16.11.2026 18:44:48",
+        "age_minutes": 12,
         "fresh": true,
         "values": {
-          "Teplota (°C)": 6.6,
-          "Vlhkosť (%)": 80,
-          "Rýchlosť vetra (km/h)": 2,
-          "Smer vetra (°)": 243,
-          "Náraz vetra (km/h)": 2.8,
+          "Teplota (°C)": 6.5,
+          "Vlhkosť (%)": 81,
+          "Rýchlosť vetra (km/h)": 1.1,
+          "Smer vetra (°)": 227,
+          "Náraz vetra (km/h)": 1.7,
           "Tlak (hPa)": 1006.1,
           "Intenzita zrážok (mm/h)": 0,
           "Zrážky spolu (mm)": 6.86,
