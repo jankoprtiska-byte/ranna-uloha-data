@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "generated_at_utc": "2026-11-17T13:16:36.963Z",
-  "generated_at_local": "17.11.2026 14:16:36",
+  "generated_at_utc": "2026-11-17T13:21:35.834Z",
+  "generated_at_local": "17.11.2026 14:21:35",
   "timezone": "Europe/Bratislava",
   "freshness_limit_minutes": 30,
   "overnight_period": {
@@ -10,7 +10,7 @@
     "description": "Predchádzajúci deň 18:00 – aktuálny deň 06:00"
   },
   "warnings": [
-    "Senzor na hlavnej ceste: posledné meranie je staré 356 min (limit 30) – neuvádzať ako aktuálny stav."
+    "Senzor na hlavnej ceste: posledné meranie je staré 361 min (limit 30) – neuvádzať ako aktuálny stav."
   ],
   "sources": {
     "air_quality": {
@@ -30,7 +30,7 @@
       "latest": {
         "measurement_time_utc": "2026-11-17T13:16:37.000Z",
         "measurement_time_local": "17.11.2026 14:16:37",
-        "age_minutes": 0,
+        "age_minutes": 5,
         "fresh": true,
         "values": {
           "PM2.5": 37.6,
@@ -130,7 +130,7 @@
       "latest": {
         "measurement_time_utc": "2026-11-17T07:20:25.000Z",
         "measurement_time_local": "17.11.2026 08:20:25",
-        "age_minutes": 356,
+        "age_minutes": 361,
         "fresh": false,
         "values": {
           "PM2.5": 0,
@@ -209,7 +209,7 @@
       "latest": {
         "measurement_time_utc": "2026-11-17T13:09:41.000Z",
         "measurement_time_local": "17.11.2026 14:09:41",
-        "age_minutes": 7,
+        "age_minutes": 12,
         "fresh": true,
         "values": {
           "Teplota (°C)": 6.1,
