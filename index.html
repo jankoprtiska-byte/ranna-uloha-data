@@ -19,16 +19,24 @@ main{padding:24px 0 50px}.section-title{font-size:1.25rem;margin:28px 0 12px}
 .card h2,.card h3{margin:0 0 8px;font-size:1rem}.metric{font-size:1.8rem;font-weight:750;line-height:1.2;letter-spacing:-.04em}.muted{color:var(--muted);font-size:.88rem}
 .pill{display:inline-flex;align-items:center;gap:6px;border-radius:999px;padding:4px 9px;font-size:.78rem;font-weight:700;background:#edf2f0;color:#44534e}
 .good{background:#e7f5ed;color:var(--green)}.warn{background:#fff3dc;color:var(--yellow)}.bad{background:#fde9e7;color:var(--red)}.info{background:#e8f2fb;color:var(--blue)}
-.vent{border-left:5px solid var(--yellow)}.vent.good-border{border-color:var(--green)}.vent.bad-border{border-color:var(--red)}
+.wide{grid-column:1/-1}
+.st-good{border-top:4px solid var(--green)}.st-warn{border-top:4px solid #e0a030}.st-bad{border-top:4px solid var(--red)}
+.vent{border-left:6px solid var(--yellow)}.v-good{border-left-color:var(--green);background:#f1faf5}.v-warn{background:#fffaf0}.v-bad{border-left-color:var(--red);background:#fdf3f1}
+.vent p{margin:6px 0 10px}
+.note{background:#fff8e8;border-color:#f0dfb9;border-left:6px solid #e0a030}.note h3{margin-bottom:4px}.note ul{margin:0;padding-left:1.1em}.note li{margin:3px 0;font-size:.95rem}
+.wx{display:grid;grid-template-columns:minmax(170px,.75fr) 2.25fr;gap:14px 22px;align-items:center}.wx .metric{font-size:2.5rem}.wx-n{grid-column:1/-1;margin:0}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(138px,1fr));gap:10px}
+.tile{background:#f6faf8;border:1px solid var(--line);border-radius:13px;padding:10px 12px}
+.tile small{display:block;color:var(--muted);font-size:.78rem}.tile b{font-size:1.12rem;line-height:1.4}.tile i{display:block;font-style:normal;color:var(--muted);font-size:.78rem}
+.wd{display:inline-block;margin-left:4px;font-weight:700;color:var(--blue)}
 .report{white-space:pre-wrap;overflow-wrap:anywhere;font-size:.97rem}.notice{padding:14px 16px;border-radius:12px;background:#fff8e8;border:1px solid #f0dfb9;color:#684a18}
 footer{padding:22px 0;color:var(--muted);font-size:.82rem;border-top:1px solid var(--line)}
-@media(max-width:620px){.grid{grid-template-columns:1fr}.wide{grid-column:auto}.card{padding:15px}header{padding-top:27px}}
-.wd{display:inline-block;margin-left:4px;font-weight:700;color:var(--blue)}
+@media(max-width:620px){.grid{grid-template-columns:1fr}.wide{grid-column:auto}.card{padding:15px}header{padding-top:27px}.wx{grid-template-columns:1fr}.tiles>:last-child:nth-child(odd){grid-column:1/-1}}
 /* Kompletný ranný prehľad */
 #report{overflow-wrap:anywhere}
 .empty{text-align:center;padding:28px 14px;color:var(--muted)}.empty b{display:block;font-size:2.2rem;margin-bottom:6px}
-.rep-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 14px;margin:0 0 14px}
-.rep-head strong{font-size:1.4rem;letter-spacing:-.02em;line-height:1.2}.rep-head span{color:var(--muted);font-size:.9rem}
+.rep-head{display:flex;flex-wrap:wrap;align-items:center;gap:4px 14px;margin:0 0 14px}
+.rep-head strong{font-size:1.05rem;letter-spacing:-.01em}.rep-head span{color:var(--muted);font-size:.9rem}
 .btn{font:inherit;font-size:.82rem;font-weight:650;color:var(--green);background:#e7f5ed;border:0;border-radius:999px;padding:7px 14px;cursor:pointer;margin-left:auto}
 .btn:hover{background:#d5eee0}.btn:focus-visible,.sec summary:focus-visible{outline:3px solid #147d5466;outline-offset:2px}
 .sec{--ac:var(--green);background:var(--card);border:1px solid var(--line);border-left:5px solid var(--ac);border-radius:17px;box-shadow:var(--shadow);margin-bottom:13px;overflow:hidden}
@@ -49,6 +57,22 @@ footer{padding:22px 0;color:var(--muted);font-size:.82rem;border-top:1px solid v
 .subsec ul{margin-bottom:8px}.subsec p,.subsec li{font-size:.92rem}
 .call{border-left:4px solid var(--yellow);background:#fff8e8;color:#5c4210;border-radius:4px 12px 12px 4px;padding:10px 13px;margin:0 0 12px;max-width:72ch;font-size:.95rem}.call b{color:inherit}
 code{background:#eef3f1;border-radius:5px;padding:1px 5px;font-size:.88em}
+.tw{margin:2px 0 12px;overflow-x:auto}
+.tw table{width:100%;border-collapse:collapse;font-size:.92rem;font-variant-numeric:tabular-nums}
+.tw th{font-size:.78rem;font-weight:600;color:var(--muted);padding:6px 8px;border-bottom:2px solid var(--line)}
+.tw td{padding:8px;border-bottom:1px solid var(--line)}.tw tr:last-child td{border-bottom:0}
+.tw .l{text-align:left}.tw .r{text-align:right}.tw .c{text-align:center}
+.tw td:first-child{font-weight:600}
+.tw.k thead{display:none}.tw.k td:first-child{font-weight:500;color:var(--muted)}.tw.k td:last-child{font-weight:650}
+@media(max-width:620px){
+.tw:not(.k) table,.tw:not(.k) tbody,.tw:not(.k) tr,.tw:not(.k) td{display:block}
+.tw:not(.k) thead{display:none}
+.tw:not(.k) tr{display:grid;grid-template-columns:repeat(var(--n),1fr);gap:2px 10px;padding:9px 0;border-bottom:1px solid var(--line)}
+.tw:not(.k) tr:last-child{border:0}
+.tw:not(.k) td{padding:0;border:0;text-align:left}
+.tw:not(.k) td:first-child{grid-column:1/-1}
+.tw:not(.k) td[data-l]::before{content:attr(data-l);display:block;font-size:.72rem;color:var(--muted);font-weight:500}
+}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 </head>
@@ -74,44 +98,53 @@ const $=id=>document.getElementById(id);
 const fmt=(v,d=1)=>Number.isFinite(Number(v))?Number(v).toLocaleString('sk-SK',{maximumFractionDigits:d}):'—';
 function pmState(v){if(v<=15)return ['Dobrá','good','Môžeš bez obáv vyvetrať.'];if(v<=25)return ['Zhoršená','warn','Ak potrebuješ, vyvetraj krátko; ak môžeš, počkaj na lepšie hodnoty.'];return ['Veľmi zlá','bad','Teraz radšej nevetráj, ak to nie je nevyhnutné; počkaj na pokles hodnôt.'];}
 function esc(x){return String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+const tile=(a,b,c)=>'<div class="tile"><small>'+a+'</small><b>'+b+'</b>'+(c?'<i>'+c+'</i>':'')+'</div>';
 function sensorCard(s){
 const l=s?.latest,v=l?.values?.['PM2.5'],fresh=l?.fresh===true&&Number.isFinite(Number(v)),state=fresh?pmState(Number(v)):null;
 const night=s?.overnight?.stats?.['PM2.5'];
-return '<article class="card"><h3>'+esc(s?.source_name||'Senzor')+'</h3><div class="metric">'+(fresh?fmt(v,1)+' <span style="font-size:1rem;font-weight:600">µg/m³</span>':'—')+'</div><div style="margin:8px 0">'+(state?'<span class="pill '+state[1]+'">'+state[0]+'</span>':'<span class="pill">Údaj nie je aktuálny</span>')+'</div><div class="muted">Meranie: '+esc(l?.measurement_time_local||'bez údaja')+' · vek '+(l?.age_minutes??'—')+' min</div>'+(night?'<div class="muted" style="margin-top:9px">Nočný priemer PM2.5: <b>'+fmt(night.average,1)+' µg/m³</b></div>':'')+'</article>';
+return '<article class="card'+(state?' st-'+state[1]:'')+'"><h3>'+esc(s?.source_name||'Senzor')+'</h3><div class="metric">'+(fresh?fmt(v,1)+' <span style="font-size:1rem;font-weight:600">µg/m³</span>':'—')+'</div><div style="margin:8px 0">'+(state?'<span class="pill '+state[1]+'">'+state[0]+'</span>':'<span class="pill">Údaj nie je aktuálny</span>')+'</div><div class="muted">Meranie: '+esc(l?.measurement_time_local||'bez údaja')+' · vek '+(l?.age_minutes??'—')+' min</div>'+(night?'<div class="muted" style="margin-top:9px">Nočný priemer PM2.5: <b>'+fmt(night.average,1)+' µg/m³</b></div>':'')+'</article>';
 }
 const DIRS=['S','SSV','SV','VSV','V','VJV','JV','JJV','J','JJZ','JZ','ZJZ','Z','ZSZ','SZ','SSZ'];
 const DIRN=['sever','sever-severovýchod','severovýchod','východ-severovýchod','východ','východ-juhovýchod','juhovýchod','juh-juhovýchod','juh','juh-juhozápad','juhozápad','západ-juhozápad','západ','západ-severozápad','severozápad','sever-severozápad'];
-function windDir(l,v){
-const f=x=>/smer|direc/i.test(x),k=Object.keys(v).find(f),k2=Object.keys(l).find(x=>f(x)&&typeof l[x]!=='object');
-const raw=k?v[k]:k2?l[k2]:null;
+function dirTile(l,v){
+const f=x=>/smer|direc/i.test(x),k=Object.keys(v).find(f),k2=Object.keys(l).find(x=>f(x)&&typeof l[x]!=='object'),raw=k?v[k]:k2?l[k2]:null;
 if(raw===null||raw===undefined||raw==='')return '';
 const n=Number(raw);
-if(!Number.isFinite(n))return '<div style="margin-top:4px">Smer vetra: <b>'+esc(raw)+'</b></div>';
+if(!Number.isFinite(n))return tile('🧭 Smer vetra',esc(raw));
 const i=Math.round((((n%360)+360)%360)/22.5)%16;
-return '<div style="margin-top:4px">Smer vetra: <b>'+DIRN[i]+' ('+DIRS[i]+')</b> · '+fmt(n,0)+'° <span class="wd" style="transform:rotate('+n+'deg)" title="Šípka ukazuje, kam vietor fúka">↓</span></div>';
+return tile('🧭 Smer vetra',DIRS[i]+' · '+fmt(n,0)+'° <span class="wd" style="transform:rotate('+n+'deg)" title="Šípka ukazuje, kam vietor fúka">↓</span>',DIRN[i]);
 }
+const kf=(o,re,ex)=>Object.keys(o||{}).find(k=>re.test(k)&&k!==ex);
 function weatherCard(w){
 const l=w?.latest,v=l?.values||{};
-if(!l)return '<article class="card"><h3>Meteostanica</h3><div class="muted">Údaje nie sú dostupné.</div></article>';
-return '<article class="card"><h3>Meteostanica</h3><div class="metric">'+fmt(v['Teplota (°C)'],1)+' °C</div><div class="muted">Vlhkosť '+fmt(v['Vlhkosť (%)'],0)+' %</div><div style="margin-top:8px">Vietor '+fmt(v['Rýchlosť vetra (km/h)'],1)+' km/h · nárazy '+fmt(v['Náraz vetra (km/h)'],1)+' km/h</div>'+windDir(l,v)+'<div class="muted" style="margin-top:4px">Meranie: '+esc(l.measurement_time_local||'bez údaja')+' · vek '+(l.age_minutes??'—')+' min</div></article>';
+if(!l)return '<article class="card wide"><h3>Meteostanica</h3><div class="muted">Údaje nie sú dostupné.</div></article>';
+const ki=kf(v,/intenzit|rate/i),kt=kf(v,/zr[aá]ž|rain|precip/i,ki),ri=Number(v[ki]),ni=w?.overnight?.stats?.[ki];
+const nm=Number(ni?.max??ni?.maximum),na=Number(ni?.average??ni?.avg);
+return '<article class="card wide wx"><div><h3>Meteostanica</h3><div class="metric">'+fmt(v['Teplota (°C)'],1)+' °C</div><div class="muted">Meranie: '+esc(l.measurement_time_local||'bez údaja')+' · vek '+(l.age_minutes??'—')+' min</div></div><div class="tiles">'+
+tile('💧 Vlhkosť',fmt(v['Vlhkosť (%)'],0)+' %')+
+tile('💨 Vietor',fmt(v['Rýchlosť vetra (km/h)'],1)+' km/h','nárazy '+fmt(v['Náraz vetra (km/h)'],1)+' km/h')+
+dirTile(l,v)+
+(ki?tile('🌧️ Intenzita zrážok',fmt(ri,2)+' mm/h',Number.isFinite(ri)?(ri>0?'Prší':'Práve neprší'):''):'')+
+(kt?tile('☔ Zrážky spolu',fmt(v[kt],2)+' mm'):'')+
+'</div>'+(Number.isFinite(nm)?'<div class="muted wx-n">Cez noc: intenzita zrážok v priemere '+fmt(na,2)+' mm/h, najviac '+fmt(nm,2)+' mm/h.</div>':'')+'</article>';
 }
 function ventilation(home){
-const l=home?.latest,v=l?.values?.['PM2.5'];
-if(!l||l.fresh!==true||!Number.isFinite(Number(v)))return '<article class="card vent"><h3>Ranné vetranie</h3><div class="pill">Nedá sa spoľahlivo vyhodnotiť</div><p class="muted">Domáci senzor neposkytuje aktuálny údaj PM2.5.</p></article>';
-const st=pmState(Number(v)),border=st[1]==='good'?'good-border':st[1]==='bad'?'bad-border':'';
-return '<article class="card vent '+border+'"><h3>Ranné vetranie</h3><div class="metric">'+st[0]+'</div><p>'+st[2]+'</p><div class="muted">Podľa aktuálneho PM2.5 domáceho senzora ('+fmt(v,1)+' µg/m³). Praktické orientačné hodnotenie, nie oficiálna klasifikácia.</div></article>';
+const l=home?.latest,v=l?.values?.['PM2.5'],T='<h3>Aktuálne podmienky na vetranie</h3>';
+if(!l||l.fresh!==true||!Number.isFinite(Number(v)))return '<article class="card wide vent">'+T+'<div class="pill">Nedá sa spoľahlivo vyhodnotiť</div><p class="muted">Domáci senzor neposkytuje aktuálny údaj PM2.5.</p></article>';
+const st=pmState(Number(v)),ic={good:'🌿',warn:'⚠️',bad:'🚫'}[st[1]];
+return '<article class="card wide vent v-'+st[1]+'">'+T+'<div class="metric">'+ic+' '+st[0]+'</div><p>'+st[2]+'</p><span class="pill">PM2.5 doma: '+fmt(v,1)+' µg/m³</span> <span class="muted">Orientačné praktické hodnotenie, nie oficiálna klasifikácia.</span></article>';
 }
 async function load(){
 try{
 const r=await fetch(DATA_URL+'?t='+Date.now(),{cache:'no-store'});if(!r.ok)throw new Error('HTTP '+r.status);
 const d=await r.json();$('updated').textContent='Dáta aktualizované: '+(d.generated_at_local||'čas nie je uvedený');
 const s=d.sources||{};$('cards').innerHTML=sensorCard(s.air_quality)+sensorCard(s.air_quality1)+weatherCard(s.weather_station)+ventilation(s.air_quality);
-if(d.warnings?.length)$('cards').insertAdjacentHTML('beforeend','<article class="card wide"><b>Upozornenia k dátam</b><ul>'+d.warnings.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul></article>');
+if(d.warnings?.length)$('cards').insertAdjacentHTML('beforeend','<article class="card wide note"><h3>⚠️ Upozornenia k dátam</h3><ul>'+d.warnings.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul></article>');
 }catch(e){$('updated').textContent='Údaje sa nepodarilo načítať';$('cards').innerHTML='<div class="notice wide">Momentálne sa nepodarilo načítať aktuálne údaje zo zdroja. Skús obnoviť stránku neskôr.</div>';}
 }
-/* ---- Kompletný ranný prehľad: markdown text -> karty ---- */
-const ICONS=[[/zdroj/i,'🔗'],[/čerstv|spoľahliv/i,'🕒'],[/počas|výstra/i,'⛅'],[/doprav/i,'🚗'],[/meran|senzor/i,'📊'],[/oznam|tabuľ/i,'📢']];
-const TONE=[[/počas|výstra/i,'w'],[/doprav/i,'t'],[/zdroj|čerstv|spoľahliv/i,'n']];
+/* ---- Kompletný ranný prehľad: markdown text -> karty a tabuľky ---- */
+const ICONS=[[/zdroj/i,'🔗'],[/čerstv|spoľahliv/i,'🕒'],[/meteostan/i,'🌡️'],[/ovzdu|pm\s?2|kvalit/i,'🌫️'],[/počas|výstra/i,'⛅'],[/doprav/i,'🚗'],[/oznam|tabuľ/i,'📢'],[/meran|senzor/i,'📊']];
+const TONE=[[/počas|výstra|meteostan/i,'w'],[/doprav/i,'t'],[/zdroj|čerstv|spoľahliv/i,'n']];
 const pick=(a,t,d)=>(a.find(x=>x[0].test(t))||[0,d])[1];
 function unwrap(u){try{const x=new URL(u);if(/(^|\.)google\.com$/.test(x.hostname)&&x.pathname==='/url'){const q=x.searchParams.get('q')||x.searchParams.get('url');if(q)return q;}}catch(e){}return u;}
 function inl(t){
@@ -127,25 +160,35 @@ if(/https?:/.test(t))t=t.replace(/^(.+?):\s+(?=https?:)/,'**$1:** ');
 else if(!/\*\*/.test(t))t=t.replace(/^((?:[^:;.]|\d\.\d){2,40}):\s/,'**$1:** ');
 return '<li>'+inl(t)+'</li>';
 }
+function tableHTML(rows){
+const R=rows.map(r=>r.replace(/^\||\|$/g,'').split('|').map(x=>x.trim()));
+const si=R.findIndex(r=>r.every(x=>/^:?-{2,}:?$/.test(x)));
+const head=si>0?R[si-1]:null,al=si>0?R[si].map(x=>x.endsWith(':')?x.startsWith(':')?'c':'r':'l'):[],B=si>-1?R.slice(si+1):R;
+const n=Math.max(...R.map(r=>r.length));
+return '<div class="tw'+(n<3?' k':'')+'"><table style="--n:'+(n-1)+'">'+(head?'<thead><tr>'+head.map((x,j)=>'<th class="'+(al[j]||'l')+'">'+inl(x)+'</th>').join('')+'</tr></thead>':'')+'<tbody>'+B.map(r=>'<tr>'+r.map((x,j)=>'<td class="'+(al[j]||'l')+'"'+(head&&j?' data-l="'+esc(head[j])+'"':'')+'>'+inl(x)+'</td>').join('')+'</tr>').join('')+'</tbody></table></div>';
+}
 function renderReport(txt){
 let L=txt.replace(/\r/g,'').split('\n').map(x=>x.trim()),k=-1;
 L.forEach((s,i)=>{if(/^-{3,}$/.test(s))k=i;});if(k>-1&&L.length-k<8)L=L.slice(0,k);
-let meta='',secs=[],cur=null,para=[],list=false,sub=false,grid=false;
+let meta='',secs=[],cur=null,para=[],tbl=[],list=false,sub=false,grid=false;
 const add=h=>{if(cur)cur.h+=h;};
 const fl=()=>{if(list){add('</ul>');list=false;}};
 const fs=()=>{fl();if(sub){add('</div>');sub=false;}};
 const fg=()=>{fs();if(grid){add('</div>');grid=false;}};
+const ft=()=>{if(tbl.length){add(tableHTML(tbl));tbl=[];}};
 const fp=()=>{if(!para.length)return;const t=para.join(' ');para=[];
 if(/^\*\*(Oficiálne výstrahy|Upozornenie|Pozor|Varovanie)/i.test(t)){fg();add('<div class="call">'+inl(t)+'</div>');}else add('<p>'+inl(t)+'</p>');};
 L.forEach(s=>{let m;
+if(/^\|.*\|$/.test(s)){fp();fl();tbl.push(s);return;}
+ft();
 if(!s||/^-{3,}$/.test(s)){fp();fl();return;}
 if(/^#\s/.test(s))return;
-if(m=s.match(/^##\s+(.+)$/)){fp();fg();const t=m[1].replace(/^\d+[.)]\s*/,'').replace(/\*\*/g,'');cur={t,ic:pick(ICONS,t,'📌'),tone:pick(TONE,t,''),shut:/zdroj|čerstv|spoľahliv/i.test(t),h:''};secs.push(cur);return;}
+if(m=s.match(/^##\s+(.+)$/)){fp();fg();const t=m[1].replace(/^\d+[.)]\s*/,'').replace(/\*\*/g,'');cur={t,ic:pick(ICONS,t,'📋'),tone:pick(TONE,t,''),shut:/zdroj|čerstv|spoľahliv/i.test(t),h:''};secs.push(cur);return;}
 if(m=s.match(/^###\s+(.+)$/)){fp();fs();if(!grid){add('<div class="subgrid">');grid=true;}add('<div class="subsec"><h4>'+inl(m[1])+'</h4>');sub=true;return;}
 if(m=s.match(/^[-*•]\s+(.+)$/)){fp();if(!cur)return;if(!list){add('<ul>');list=true;}add(li(m[1]));return;}
 if(!cur){if(/^\*\*.+\*\*$/.test(s))meta=s.replace(/\*\*/g,'');return;}
 fl();para.push(s);});
-fp();fg();
+fp();ft();fg();
 if(!secs.length)return '<div class="card report">'+esc(txt)+'</div>';
 const dt=meta.split(' · ');
 return '<div class="rep-head"><strong>'+esc(dt[0]||'Dnešný prehľad')+'</strong><span>'+esc(dt.slice(1).join(', '))+'</span>'+(secs.length>1?'<button class="btn" id="tgl" type="button">Zbaliť všetko</button>':'')+'</div>'+
