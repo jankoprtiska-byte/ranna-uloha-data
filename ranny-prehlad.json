@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "generated_at_utc": "2026-11-19T14:11:36.447Z",
-  "generated_at_local": "19.11.2026 15:11:36",
+  "generated_at_utc": "2026-11-19T14:16:35.386Z",
+  "generated_at_local": "19.11.2026 15:16:35",
   "timezone": "Europe/Bratislava",
   "freshness_limit_minutes": 30,
   "overnight_period": {
@@ -10,7 +10,7 @@
     "description": "Predchádzajúci deň 18:00 – aktuálny deň 06:00"
   },
   "warnings": [
-    "Senzor na hlavnej ceste: posledné meranie je staré 418 min (limit 30) – neuvádzať ako aktuálny stav."
+    "Senzor na hlavnej ceste: posledné meranie je staré 423 min (limit 30) – neuvádzať ako aktuálny stav."
   ],
   "sources": {
     "air_quality": {
@@ -30,7 +30,7 @@
       "latest": {
         "measurement_time_utc": "2026-11-19T14:09:11.000Z",
         "measurement_time_local": "19.11.2026 15:09:11",
-        "age_minutes": 2,
+        "age_minutes": 7,
         "fresh": true,
         "values": {
           "PM2.5": 1.4,
@@ -130,7 +130,7 @@
       "latest": {
         "measurement_time_utc": "2026-11-19T07:13:07.000Z",
         "measurement_time_local": "19.11.2026 08:13:07",
-        "age_minutes": 418,
+        "age_minutes": 423,
         "fresh": false,
         "values": {
           "PM2.5": 0,
@@ -191,7 +191,7 @@
       "source_id": "weather_station",
       "source_name": "Meteostanica",
       "ok": true,
-      "row_count": 3328,
+      "row_count": 3332,
       "columns": [
         "Čas stiahnutia",
         "Čas merania",
@@ -207,16 +207,16 @@
         "Epoch"
       ],
       "latest": {
-        "measurement_time_utc": "2026-11-19T13:49:53.000Z",
-        "measurement_time_local": "19.11.2026 14:49:53",
-        "age_minutes": 22,
+        "measurement_time_utc": "2026-11-19T14:09:23.000Z",
+        "measurement_time_local": "19.11.2026 15:09:23",
+        "age_minutes": 7,
         "fresh": true,
         "values": {
-          "Teplota (°C)": 12.2,
-          "Vlhkosť (%)": 53.4,
-          "Rýchlosť vetra (km/h)": 8.7,
-          "Smer vetra (°)": 199,
-          "Náraz vetra (km/h)": 11,
+          "Teplota (°C)": 12,
+          "Vlhkosť (%)": 54.6,
+          "Rýchlosť vetra (km/h)": 3.9,
+          "Smer vetra (°)": 223,
+          "Náraz vetra (km/h)": 6,
           "Tlak (hPa)": 991.87,
           "Intenzita zrážok (mm/h)": 0,
           "Zrážky spolu (mm)": 0,
