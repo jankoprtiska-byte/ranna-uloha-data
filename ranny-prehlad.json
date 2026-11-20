@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "generated_at_utc": "2026-11-20T07:31:35.038Z",
-  "generated_at_local": "20.11.2026 08:31:35",
+  "generated_at_utc": "2026-11-20T07:36:35.015Z",
+  "generated_at_local": "20.11.2026 08:36:35",
   "timezone": "Europe/Bratislava",
   "freshness_limit_minutes": 30,
   "overnight_period": {
@@ -15,7 +15,7 @@
       "source_id": "air_quality",
       "source_name": "Senzor doma",
       "ok": true,
-      "row_count": 28128,
+      "row_count": 28130,
       "columns": [
         "Čas stiahnutia",
         "Čas merania",
@@ -26,16 +26,16 @@
         "Tlak"
       ],
       "latest": {
-        "measurement_time_utc": "2026-11-20T07:29:47.000Z",
-        "measurement_time_local": "20.11.2026 08:29:47",
+        "measurement_time_utc": "2026-11-20T07:34:54.000Z",
+        "measurement_time_local": "20.11.2026 08:34:54",
         "age_minutes": 2,
         "fresh": true,
         "values": {
-          "PM2.5": 1.7,
-          "PM10": 2,
+          "PM2.5": 1.6,
+          "PM10": 2.17,
           "Teplota": 8.08,
-          "Vlhkosť": 83.35,
-          "Tlak": 95935.38
+          "Vlhkosť": 82.84,
+          "Tlak": 95945.31
         }
       },
       "overnight": {
@@ -117,7 +117,7 @@
       "source_id": "air_quality1",
       "source_name": "Senzor na hlavnej ceste",
       "ok": true,
-      "row_count": 14454,
+      "row_count": 14455,
       "columns": [
         "Čas stiahnutia",
         "Čas merania",
@@ -128,7 +128,7 @@
       "latest": {
         "measurement_time_utc": "2026-11-20T07:08:38.000Z",
         "measurement_time_local": "20.11.2026 08:08:38",
-        "age_minutes": 23,
+        "age_minutes": 28,
         "fresh": true,
         "values": {
           "PM2.5": 1,
@@ -207,7 +207,7 @@
       "latest": {
         "measurement_time_utc": "2026-11-20T07:19:08.000Z",
         "measurement_time_local": "20.11.2026 08:19:08",
-        "age_minutes": 12,
+        "age_minutes": 17,
         "fresh": true,
         "values": {
           "Teplota (°C)": 7.4,
