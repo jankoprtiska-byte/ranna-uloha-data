@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "generated_at_utc": "2026-11-21T21:26:34.895Z",
-  "generated_at_local": "21.11.2026 22:26:34",
+  "generated_at_utc": "2026-11-21T21:31:35.566Z",
+  "generated_at_local": "21.11.2026 22:31:35",
   "timezone": "Europe/Bratislava",
   "freshness_limit_minutes": 30,
   "overnight_period": {
@@ -15,7 +15,7 @@
       "source_id": "air_quality",
       "source_name": "Senzor doma",
       "ok": true,
-      "row_count": 29011,
+      "row_count": 29012,
       "columns": [
         "Čas stiahnutia",
         "Čas merania",
@@ -26,16 +26,16 @@
         "Tlak"
       ],
       "latest": {
-        "measurement_time_utc": "2026-11-21T21:26:31.000Z",
-        "measurement_time_local": "21.11.2026 22:26:31",
-        "age_minutes": 0,
+        "measurement_time_utc": "2026-11-21T21:29:01.000Z",
+        "measurement_time_local": "21.11.2026 22:29:01",
+        "age_minutes": 3,
         "fresh": true,
         "values": {
-          "PM2.5": 3.7,
-          "PM10": 4.1,
-          "Teplota": 4.02,
-          "Vlhkosť": 68.85,
-          "Tlak": 97377.31
+          "PM2.5": 3.6,
+          "PM10": 9.43,
+          "Teplota": 4.09,
+          "Vlhkosť": 68.13,
+          "Tlak": 97377.84
         }
       },
       "overnight": {
@@ -117,7 +117,7 @@
       "source_id": "air_quality1",
       "source_name": "Senzor na hlavnej ceste",
       "ok": true,
-      "row_count": 14912,
+      "row_count": 14913,
       "columns": [
         "Čas stiahnutia",
         "Čas merania",
@@ -126,13 +126,13 @@
         "Vlhkosť"
       ],
       "latest": {
-        "measurement_time_utc": "2026-11-21T21:25:21.000Z",
-        "measurement_time_local": "21.11.2026 22:25:21",
+        "measurement_time_utc": "2026-11-21T21:30:22.000Z",
+        "measurement_time_local": "21.11.2026 22:30:22",
         "age_minutes": 1,
         "fresh": true,
         "values": {
-          "PM2.5": 3,
-          "PM10": 3,
+          "PM2.5": 1,
+          "PM10": 1,
           "Vlhkosť": 49
         }
       },
@@ -207,7 +207,7 @@
       "latest": {
         "measurement_time_utc": "2026-11-21T21:09:52.000Z",
         "measurement_time_local": "21.11.2026 22:09:52",
-        "age_minutes": 17,
+        "age_minutes": 22,
         "fresh": true,
         "values": {
           "Teplota (°C)": 3.7,
