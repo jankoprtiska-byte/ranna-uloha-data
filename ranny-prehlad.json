@@ -1,12 +1,12 @@
 {
   "schema_version": 2,
-  "generated_at_utc": "2026-11-23T02:26:34.871Z",
-  "generated_at_local": "23.11.2026 03:26:34",
+  "generated_at_utc": "2026-11-23T02:31:35.831Z",
+  "generated_at_local": "23.11.2026 03:31:35",
   "timezone": "Europe/Bratislava",
   "freshness_limit_minutes": 30,
   "overnight_period": {
     "start": "22.11.2026 18:00:00",
-    "end": "23.11.2026 03:26:34",
+    "end": "23.11.2026 03:31:35",
     "description": "Predchádzajúci deň 18:00 – aktuálny deň 06:00"
   },
   "warnings": [],
@@ -15,7 +15,7 @@
       "source_id": "air_quality",
       "source_name": "Senzor doma",
       "ok": true,
-      "row_count": 29678,
+      "row_count": 29682,
       "columns": [
         "Čas stiahnutia",
         "Čas merania",
@@ -26,87 +26,87 @@
         "Tlak"
       ],
       "latest": {
-        "measurement_time_utc": "2026-11-23T02:19:14.000Z",
-        "measurement_time_local": "23.11.2026 03:19:14",
-        "age_minutes": 7,
+        "measurement_time_utc": "2026-11-23T02:29:29.000Z",
+        "measurement_time_local": "23.11.2026 03:29:29",
+        "age_minutes": 2,
         "fresh": true,
         "values": {
-          "PM2.5": 18.67,
-          "PM10": 34.42,
+          "PM2.5": 20.08,
+          "PM10": 29.2,
           "Teplota": -0.23,
-          "Vlhkosť": 83.51,
-          "Tlak": 96724.5
+          "Vlhkosť": 83.93,
+          "Tlak": 96722.66
         }
       },
       "overnight": {
         "period_start": "22.11.2026 18:00:00",
-        "period_end": "23.11.2026 03:26:34",
-        "record_count": 217,
+        "period_end": "23.11.2026 03:31:35",
+        "record_count": 221,
         "stats": {
           "PM2.5": {
-            "count": 214,
-            "average": 22.8,
+            "count": 218,
+            "average": 22.76,
             "min": 5.25,
             "max": 36.33
           },
           "PM10": {
-            "count": 214,
-            "average": 40.42,
+            "count": 218,
+            "average": 40.36,
             "min": 7.6,
             "max": 65.85
           },
           "Teplota": {
-            "count": 217,
-            "average": -1.13,
+            "count": 221,
+            "average": -1.11,
             "min": -2.46,
             "max": -0.07
           },
           "Vlhkosť": {
-            "count": 217,
-            "average": 84.36,
+            "count": 221,
+            "average": 84.35,
             "min": 81.75,
             "max": 87.73
           },
           "Tlak": {
-            "count": 217,
-            "average": 96661.31,
+            "count": 221,
+            "average": 96662.47,
             "min": 96613.5,
-            "max": 96724.5
+            "max": 96732.44
           }
         },
         "trend": {
           "PM2.5": {
-            "first_half_average": 19.7,
-            "second_half_average": 25.96,
-            "difference": 6.26,
-            "percent_change": 31.8,
+            "first_half_average": 19.8,
+            "second_half_average": 25.72,
+            "difference": 5.92,
+            "percent_change": 29.9,
             "direction": "rastúci"
           },
           "PM10": {
-            "first_half_average": 34.38,
-            "second_half_average": 46.58,
-            "difference": 12.19,
-            "percent_change": 35.5,
+            "first_half_average": 34.53,
+            "second_half_average": 46.18,
+            "difference": 11.66,
+            "percent_change": 33.8,
             "direction": "rastúci"
           },
           "Teplota": {
-            "first_half_average": -1.79,
-            "second_half_average": -0.45,
+            "first_half_average": -1.78,
+            "second_half_average": -0.44,
             "difference": 1.34,
-            "percent_change": 74.7,
+            "percent_change": 75.3,
             "direction": "rastúci"
           },
           "Vlhkosť": {
-            "first_half_average": 85.51,
-            "second_half_average": 83.18,
-            "difference": -2.33,
+            "first_half_average": 85.5,
+            "second_half_average": 83.19,
+            "difference": -2.32,
             "percent_change": -2.7,
             "direction": "klesajúci"
           },
           "Tlak": {
-            "first_half_average": 96651.43,
-            "second_half_average": 96671.46,
-            "difference": 20.03,
+            "first_half_average": 96651.71,
+            "second_half_average": 96673.33,
+            "difference": 21.62,
             "percent_change": 0,
             "direction": "stabilný"
           }
@@ -117,7 +117,7 @@
       "source_id": "air_quality1",
       "source_name": "Senzor na hlavnej ceste",
       "ok": true,
-      "row_count": 15258,
+      "row_count": 15260,
       "columns": [
         "Čas stiahnutia",
         "Čas merania",
@@ -126,58 +126,58 @@
         "Vlhkosť"
       ],
       "latest": {
-        "measurement_time_utc": "2026-11-23T02:20:18.000Z",
-        "measurement_time_local": "23.11.2026 03:20:18",
-        "age_minutes": 6,
+        "measurement_time_utc": "2026-11-23T02:30:18.000Z",
+        "measurement_time_local": "23.11.2026 03:30:18",
+        "age_minutes": 1,
         "fresh": true,
         "values": {
-          "PM2.5": 52,
-          "PM10": 62.7,
+          "PM2.5": 48.2,
+          "PM10": 56.3,
           "Vlhkosť": 53
         }
       },
       "overnight": {
         "period_start": "22.11.2026 18:00:00",
-        "period_end": "23.11.2026 03:26:34",
-        "record_count": 112,
+        "period_end": "23.11.2026 03:31:35",
+        "record_count": 114,
         "stats": {
           "PM2.5": {
-            "count": 112,
-            "average": 59.66,
+            "count": 114,
+            "average": 59.44,
             "min": 31,
             "max": 106
           },
           "PM10": {
-            "count": 112,
-            "average": 71.04,
+            "count": 114,
+            "average": 70.8,
             "min": 32.7,
             "max": 113.7
           },
           "Vlhkosť": {
-            "count": 112,
-            "average": 52.32,
+            "count": 114,
+            "average": 52.33,
             "min": 51,
             "max": 53
           }
         },
         "trend": {
           "PM2.5": {
-            "first_half_average": 56.88,
-            "second_half_average": 62.44,
-            "difference": 5.56,
-            "percent_change": 9.8,
+            "first_half_average": 56.97,
+            "second_half_average": 61.91,
+            "difference": 4.94,
+            "percent_change": 8.7,
             "direction": "rastúci"
           },
           "PM10": {
-            "first_half_average": 67.76,
-            "second_half_average": 74.33,
-            "difference": 6.57,
-            "percent_change": 9.7,
+            "first_half_average": 67.92,
+            "second_half_average": 73.67,
+            "difference": 5.75,
+            "percent_change": 8.5,
             "direction": "rastúci"
           },
           "Vlhkosť": {
-            "first_half_average": 52.29,
-            "second_half_average": 52.36,
+            "first_half_average": 52.3,
+            "second_half_average": 52.37,
             "difference": 0.07,
             "percent_change": 0.1,
             "direction": "stabilný"
@@ -189,7 +189,7 @@
       "source_id": "weather_station",
       "source_name": "Meteostanica",
       "ok": true,
-      "row_count": 4333,
+      "row_count": 4337,
       "columns": [
         "Čas stiahnutia",
         "Čas merania",
@@ -205,17 +205,17 @@
         "Epoch"
       ],
       "latest": {
-        "measurement_time_utc": "2026-11-23T02:04:46.000Z",
-        "measurement_time_local": "23.11.2026 03:04:46",
-        "age_minutes": 22,
+        "measurement_time_utc": "2026-11-23T02:24:16.000Z",
+        "measurement_time_local": "23.11.2026 03:24:16",
+        "age_minutes": 7,
         "fresh": true,
         "values": {
           "Teplota (°C)": -1,
           "Vlhkosť (%)": 92,
-          "Rýchlosť vetra (km/h)": 1.6,
-          "Smer vetra (°)": 201,
-          "Náraz vetra (km/h)": 1.7,
-          "Tlak (hPa)": 1006.43,
+          "Rýchlosť vetra (km/h)": 1.2,
+          "Smer vetra (°)": 195,
+          "Náraz vetra (km/h)": 1.6,
+          "Tlak (hPa)": 1006.77,
           "Intenzita zrážok (mm/h)": 0,
           "Zrážky spolu (mm)": 0,
           "QC status": 1
@@ -223,59 +223,59 @@
       },
       "overnight": {
         "period_start": "22.11.2026 18:00:00",
-        "period_end": "23.11.2026 03:26:34",
-        "record_count": 107,
+        "period_end": "23.11.2026 03:31:35",
+        "record_count": 111,
         "stats": {
           "Teplota (°C)": {
-            "count": 107,
-            "average": -1.86,
+            "count": 111,
+            "average": -1.83,
             "min": -2.9,
             "max": -1
           },
           "Vlhkosť (%)": {
-            "count": 107,
+            "count": 111,
             "average": 92.24,
             "min": 89,
             "max": 93
           },
           "Rýchlosť vetra (km/h)": {
-            "count": 107,
-            "average": 1.46,
+            "count": 111,
+            "average": 1.45,
             "min": 0,
             "max": 3.5
           },
           "Smer vetra (°)": {
-            "count": 107,
+            "count": 111,
             "circular_mean_deg": 205,
             "note": "Orientačný kruhový priemer; pre aktuálny smer použi latest.values."
           },
           "Náraz vetra (km/h)": {
-            "count": 107,
+            "count": 111,
             "average": 1.82,
             "min": 0,
             "max": 4.1
           },
           "Tlak (hPa)": {
-            "count": 107,
-            "average": 1006.21,
+            "count": 111,
+            "average": 1006.23,
             "min": 1005.76,
-            "max": 1006.43
+            "max": 1006.77
           },
           "Intenzita zrážok (mm/h)": {
-            "count": 107,
+            "count": 111,
             "average": 0,
             "min": 0,
             "max": 0
           },
           "Zrážky spolu (mm)": {
-            "count": 107,
+            "count": 111,
             "average": 0,
             "min": 0,
             "max": 0,
             "increase": 0
           },
           "QC status": {
-            "count": 107,
+            "count": 111,
             "average": 1,
             "min": 1,
             "max": 1
@@ -284,36 +284,36 @@
         "trend": {
           "Teplota (°C)": {
             "first_half_average": -2.13,
-            "second_half_average": -1.55,
-            "difference": 0.58,
-            "percent_change": 27,
+            "second_half_average": -1.51,
+            "difference": 0.62,
+            "percent_change": 29.2,
             "direction": "rastúci"
           },
           "Vlhkosť (%)": {
-            "first_half_average": 91.82,
-            "second_half_average": 92.71,
-            "difference": 0.89,
-            "percent_change": 1,
+            "first_half_average": 91.84,
+            "second_half_average": 92.65,
+            "difference": 0.82,
+            "percent_change": 0.9,
             "direction": "stabilný"
           },
           "Rýchlosť vetra (km/h)": {
-            "first_half_average": 2.01,
-            "second_half_average": 0.85,
-            "difference": -1.16,
-            "percent_change": -57.6,
+            "first_half_average": 1.99,
+            "second_half_average": 0.88,
+            "difference": -1.11,
+            "percent_change": -55.7,
             "direction": "klesajúci"
           },
           "Náraz vetra (km/h)": {
-            "first_half_average": 2.42,
-            "second_half_average": 1.17,
-            "difference": -1.25,
-            "percent_change": -51.8,
+            "first_half_average": 2.4,
+            "second_half_average": 1.21,
+            "difference": -1.2,
+            "percent_change": -49.8,
             "direction": "klesajúci"
           },
           "Tlak (hPa)": {
-            "first_half_average": 1006.08,
-            "second_half_average": 1006.35,
-            "difference": 0.26,
+            "first_half_average": 1006.09,
+            "second_half_average": 1006.37,
+            "difference": 0.28,
             "percent_change": 0,
             "direction": "stabilný"
           },
