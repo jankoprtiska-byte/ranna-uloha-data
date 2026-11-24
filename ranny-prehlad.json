@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "generated_at_utc": "2026-11-24T15:26:35.999Z",
-  "generated_at_local": "24.11.2026 16:26:35",
+  "generated_at_utc": "2026-11-24T15:31:35.107Z",
+  "generated_at_local": "24.11.2026 16:31:35",
   "timezone": "Europe/Bratislava",
   "freshness_limit_minutes": 30,
   "overnight_period": {
@@ -9,9 +9,7 @@
     "end": "24.11.2026 06:00:00",
     "description": "Predchádzajúci deň 18:00 – aktuálny deň 06:00"
   },
-  "warnings": [
-    "Senzor na hlavnej ceste: posledné meranie je staré 502 min (limit 30) – neuvádzať ako aktuálny stav."
-  ],
+  "warnings": [],
   "sources": {
     "air_quality": {
       "source_id": "air_quality",
@@ -30,7 +28,7 @@
       "latest": {
         "measurement_time_utc": "2026-11-24T15:26:16.000Z",
         "measurement_time_local": "24.11.2026 16:26:16",
-        "age_minutes": 0,
+        "age_minutes": 5,
         "fresh": true,
         "values": {
           "PM2.5": 3.5,
@@ -119,7 +117,7 @@
       "source_id": "air_quality1",
       "source_name": "Senzor na hlavnej ceste",
       "ok": true,
-      "row_count": 15705,
+      "row_count": 15706,
       "columns": [
         "Čas stiahnutia",
         "Čas merania",
@@ -128,14 +126,14 @@
         "Vlhkosť"
       ],
       "latest": {
-        "measurement_time_utc": "2026-11-24T07:04:46.000Z",
-        "measurement_time_local": "24.11.2026 08:04:46",
-        "age_minutes": 502,
-        "fresh": false,
+        "measurement_time_utc": "2026-11-24T15:30:04.000Z",
+        "measurement_time_local": "24.11.2026 16:30:04",
+        "age_minutes": 2,
+        "fresh": true,
         "values": {
-          "PM2.5": 5.2,
-          "PM10": 6.2,
-          "Vlhkosť": 47
+          "PM2.5": 8.3,
+          "PM10": 8.3,
+          "Vlhkosť": 68
         }
       },
       "overnight": {
@@ -209,7 +207,7 @@
       "latest": {
         "measurement_time_utc": "2026-11-24T15:09:24.000Z",
         "measurement_time_local": "24.11.2026 16:09:24",
-        "age_minutes": 17,
+        "age_minutes": 22,
         "fresh": true,
         "values": {
           "Teplota (°C)": 0.5,
