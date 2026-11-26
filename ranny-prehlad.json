@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "generated_at_utc": "2026-11-26T10:11:34.992Z",
-  "generated_at_local": "26.11.2026 11:11:34",
+  "generated_at_utc": "2026-11-26T10:16:34.910Z",
+  "generated_at_local": "26.11.2026 11:16:34",
   "timezone": "Europe/Bratislava",
   "freshness_limit_minutes": 30,
   "overnight_period": {
@@ -10,14 +10,14 @@
     "description": "Predchádzajúci deň 18:00 – aktuálny deň 06:00"
   },
   "warnings": [
-    "Senzor na hlavnej ceste: posledné meranie je staré 179 min (limit 30) – neuvádzať ako aktuálny stav."
+    "Senzor na hlavnej ceste: posledné meranie je staré 184 min (limit 30) – neuvádzať ako aktuálny stav."
   ],
   "sources": {
     "air_quality": {
       "source_id": "air_quality",
       "source_name": "Senzor doma",
       "ok": true,
-      "row_count": 31524,
+      "row_count": 31526,
       "columns": [
         "Čas stiahnutia",
         "Čas merania",
@@ -28,15 +28,15 @@
         "Tlak"
       ],
       "latest": {
-        "measurement_time_utc": "2026-11-26T10:09:21.000Z",
-        "measurement_time_local": "26.11.2026 11:09:21",
+        "measurement_time_utc": "2026-11-26T10:14:28.000Z",
+        "measurement_time_local": "26.11.2026 11:14:28",
         "age_minutes": 2,
         "fresh": true,
         "values": {
-          "PM2.5": 9.48,
-          "PM10": 16.23,
+          "PM2.5": 9.63,
+          "PM10": 15.98,
           "Teplota": 1.75,
-          "Vlhkosť": 65.8,
+          "Vlhkosť": 65.95,
           "Tlak": 97281.94
         }
       },
@@ -130,7 +130,7 @@
       "latest": {
         "measurement_time_utc": "2026-11-26T07:12:16.000Z",
         "measurement_time_local": "26.11.2026 08:12:16",
-        "age_minutes": 179,
+        "age_minutes": 184,
         "fresh": false,
         "values": {
           "PM2.5": 35,
@@ -209,7 +209,7 @@
       "latest": {
         "measurement_time_utc": "2026-11-26T09:49:18.000Z",
         "measurement_time_local": "26.11.2026 10:49:18",
-        "age_minutes": 22,
+        "age_minutes": 27,
         "fresh": true,
         "values": {
           "Teplota (°C)": 0.8,
