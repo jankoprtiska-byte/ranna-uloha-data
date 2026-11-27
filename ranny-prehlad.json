@@ -1,12 +1,12 @@
 {
   "schema_version": 2,
-  "generated_at_utc": "2026-11-27T04:26:35.343Z",
-  "generated_at_local": "27.11.2026 05:26:35",
+  "generated_at_utc": "2026-11-27T04:31:35.205Z",
+  "generated_at_local": "27.11.2026 05:31:35",
   "timezone": "Europe/Bratislava",
   "freshness_limit_minutes": 30,
   "overnight_period": {
     "start": "26.11.2026 18:00:00",
-    "end": "27.11.2026 05:26:35",
+    "end": "27.11.2026 05:31:35",
     "description": "Predchádzajúci deň 18:00 – aktuálny deň 06:00"
   },
   "warnings": [],
@@ -15,7 +15,7 @@
       "source_id": "air_quality",
       "source_name": "Senzor doma",
       "ok": true,
-      "row_count": 31948,
+      "row_count": 31950,
       "columns": [
         "Čas stiahnutia",
         "Čas merania",
@@ -26,50 +26,50 @@
         "Tlak"
       ],
       "latest": {
-        "measurement_time_utc": "2026-11-27T04:25:33.000Z",
-        "measurement_time_local": "27.11.2026 05:25:33",
+        "measurement_time_utc": "2026-11-27T04:30:40.000Z",
+        "measurement_time_local": "27.11.2026 05:30:40",
         "age_minutes": 1,
         "fresh": true,
         "values": {
-          "PM2.5": 15.43,
-          "PM10": 27.45,
-          "Teplota": 0.62,
-          "Vlhkosť": 82.3,
-          "Tlak": 97281.59
+          "PM2.5": 13.5,
+          "PM10": 19.98,
+          "Teplota": 0.57,
+          "Vlhkosť": 83,
+          "Tlak": 97285
         }
       },
       "overnight": {
         "period_start": "26.11.2026 18:00:00",
-        "period_end": "27.11.2026 05:26:35",
-        "record_count": 266,
+        "period_end": "27.11.2026 05:31:35",
+        "record_count": 268,
         "stats": {
           "PM2.5": {
-            "count": 258,
+            "count": 260,
             "average": 15.05,
             "min": 12.45,
             "max": 19.83
           },
           "PM10": {
-            "count": 258,
+            "count": 260,
             "average": 24.29,
             "min": 17.42,
             "max": 34.03
           },
           "Teplota": {
-            "count": 266,
+            "count": 268,
             "average": 0.29,
             "min": -0.23,
             "max": 0.76
           },
           "Vlhkosť": {
-            "count": 266,
+            "count": 268,
             "average": 83.54,
             "min": 80.64,
             "max": 86.38
           },
           "Tlak": {
-            "count": 266,
-            "average": 97179.69,
+            "count": 268,
+            "average": 97180.49,
             "min": 97095.78,
             "max": 97292.5
           }
@@ -77,15 +77,15 @@
         "trend": {
           "PM2.5": {
             "first_half_average": 15.03,
-            "second_half_average": 15.07,
-            "difference": 0.03,
+            "second_half_average": 15.06,
+            "difference": 0.02,
             "percent_change": 0.2,
             "direction": "stabilný"
           },
           "PM10": {
-            "first_half_average": 24.48,
-            "second_half_average": 24.1,
-            "difference": -0.37,
+            "first_half_average": 24.47,
+            "second_half_average": 24.11,
+            "difference": -0.36,
             "percent_change": -1.5,
             "direction": "stabilný"
           },
@@ -93,20 +93,20 @@
             "first_half_average": 0,
             "second_half_average": 0.58,
             "difference": 0.58,
-            "percent_change": 128600,
+            "percent_change": 16141.7,
             "direction": "rastúci"
           },
           "Vlhkosť": {
-            "first_half_average": 84.62,
+            "first_half_average": 84.61,
             "second_half_average": 82.46,
-            "difference": -2.17,
-            "percent_change": -2.6,
+            "difference": -2.15,
+            "percent_change": -2.5,
             "direction": "klesajúci"
           },
           "Tlak": {
-            "first_half_average": 97142.46,
-            "second_half_average": 97216.92,
-            "difference": 74.46,
+            "first_half_average": 97142.72,
+            "second_half_average": 97218.26,
+            "difference": 75.54,
             "percent_change": 0.1,
             "direction": "stabilný"
           }
@@ -128,7 +128,7 @@
       "latest": {
         "measurement_time_utc": "2026-11-27T04:25:31.000Z",
         "measurement_time_local": "27.11.2026 05:25:31",
-        "age_minutes": 1,
+        "age_minutes": 6,
         "fresh": true,
         "values": {
           "PM2.5": 34.2,
@@ -138,7 +138,7 @@
       },
       "overnight": {
         "period_start": "26.11.2026 18:00:00",
-        "period_end": "27.11.2026 05:26:35",
+        "period_end": "27.11.2026 05:31:35",
         "record_count": 139,
         "stats": {
           "PM2.5": {
@@ -162,23 +162,23 @@
         },
         "trend": {
           "PM2.5": {
-            "first_half_average": 41.54,
+            "first_half_average": 41.5,
             "second_half_average": 38.22,
-            "difference": -3.32,
-            "percent_change": -8,
+            "difference": -3.28,
+            "percent_change": -7.9,
             "direction": "klesajúci"
           },
           "PM10": {
-            "first_half_average": 46.85,
+            "first_half_average": 46.77,
             "second_half_average": 41.75,
-            "difference": -5.1,
-            "percent_change": -10.9,
+            "difference": -5.02,
+            "percent_change": -10.7,
             "direction": "klesajúci"
           },
           "Vlhkosť": {
-            "first_half_average": 56.89,
-            "second_half_average": 53.58,
-            "difference": -3.31,
+            "first_half_average": 56.85,
+            "second_half_average": 53.57,
+            "difference": -3.27,
             "percent_change": -5.8,
             "direction": "klesajúci"
           }
@@ -207,7 +207,7 @@
       "latest": {
         "measurement_time_utc": "2026-11-27T04:19:49.000Z",
         "measurement_time_local": "27.11.2026 05:19:49",
-        "age_minutes": 7,
+        "age_minutes": 12,
         "fresh": true,
         "values": {
           "Teplota (°C)": -0.7,
@@ -223,7 +223,7 @@
       },
       "overnight": {
         "period_start": "26.11.2026 18:00:00",
-        "period_end": "27.11.2026 05:26:35",
+        "period_end": "27.11.2026 05:31:35",
         "record_count": 134,
         "stats": {
           "Teplota (°C)": {
