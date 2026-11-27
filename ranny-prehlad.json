@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "generated_at_utc": "2026-11-27T12:16:35.275Z",
-  "generated_at_local": "27.11.2026 13:16:35",
+  "generated_at_utc": "2026-11-27T12:21:35.230Z",
+  "generated_at_local": "27.11.2026 13:21:35",
   "timezone": "Europe/Bratislava",
   "freshness_limit_minutes": 30,
   "overnight_period": {
@@ -10,14 +10,14 @@
     "description": "Predchádzajúci deň 18:00 – aktuálny deň 06:00"
   },
   "warnings": [
-    "Senzor na hlavnej ceste: posledné meranie je staré 299 min (limit 30) – neuvádzať ako aktuálny stav."
+    "Senzor na hlavnej ceste: posledné meranie je staré 304 min (limit 30) – neuvádzať ako aktuálny stav."
   ],
   "sources": {
     "air_quality": {
       "source_id": "air_quality",
       "source_name": "Senzor doma",
       "ok": true,
-      "row_count": 32128,
+      "row_count": 32132,
       "columns": [
         "Čas stiahnutia",
         "Čas merania",
@@ -28,16 +28,16 @@
         "Tlak"
       ],
       "latest": {
-        "measurement_time_utc": "2026-11-27T12:10:41.000Z",
-        "measurement_time_local": "27.11.2026 13:10:41",
-        "age_minutes": 6,
+        "measurement_time_utc": "2026-11-27T12:21:07.000Z",
+        "measurement_time_local": "27.11.2026 13:21:07",
+        "age_minutes": 0,
         "fresh": true,
         "values": {
-          "PM2.5": 13.13,
-          "PM10": 20.75,
-          "Teplota": 1.41,
-          "Vlhkosť": 75.85,
-          "Tlak": 97621.09
+          "PM2.5": 15.9,
+          "PM10": 24.08,
+          "Teplota": 1.56,
+          "Vlhkosť": 75.94,
+          "Tlak": 97623.91
         }
       },
       "overnight": {
@@ -130,7 +130,7 @@
       "latest": {
         "measurement_time_utc": "2026-11-27T07:17:24.000Z",
         "measurement_time_local": "27.11.2026 08:17:24",
-        "age_minutes": 299,
+        "age_minutes": 304,
         "fresh": false,
         "values": {
           "PM2.5": 40.2,
@@ -209,7 +209,7 @@
       "latest": {
         "measurement_time_utc": "2026-11-27T12:04:34.000Z",
         "measurement_time_local": "27.11.2026 13:04:34",
-        "age_minutes": 12,
+        "age_minutes": 17,
         "fresh": true,
         "values": {
           "Teplota (°C)": 0.2,
